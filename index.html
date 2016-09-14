@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gif Search</title>
+    <style type="text/css">
+    button, div, form, input { margin: 10px;}
+    </style>
+    <!-- Added a link to Bootstrap Online-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Added a link to local bootstrap file -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Passion+One|Patua+One" rel="stylesheet">
+</head>
+
+<body>
+    
+    
+    <!-- SEARCH INPUT AND BUTTON -->
+    <div class="container text-center" id="container1" style="border:2px solid black">
+        <h1 style="font-family:Bangers">Gif Search</h1>
+        
+        <div id="gifsView">
+          <button type="button" class="btn btn-primary" id="trending" data-name="trending">Trending</button>
+          <button type="button" class="btn btn-success gif" data-name="random">Random</button>
+          <button type="button" class="btn btn-danger gif" data-name="Cats">Cats</button>
+          <button type="button" class="btn btn-warning gif" data-name="Baby">Babies</button>
+
+        </div>
+
+        <form id="gif-form">
+            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+              <div class="input-group">
+                <input type="text" class="form-control" id="gif-input" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" style="font-family:Passion one; font-size: 14px;" id="findGif" value="Search" type="button">Search</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </form>
+    </div>    
+    
+    <div class="container-fluid" id="container2">
+        <div id="main"></div>
+
+        
+    </div>
+  
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!-- Link to local jQuery downloaded on my computer -->
+    <script type="text/javascript" src="jquery-3.1.0.js"></script>
+    <!-- Adding a local jQuery file. Here you can add all jQuery changes to a seperate file called script.js -->
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+</body>
+
+</html>
