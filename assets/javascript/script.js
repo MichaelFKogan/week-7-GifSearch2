@@ -42,7 +42,7 @@ $(document).ready(function () {
             var gifName = $('#gif-input').val().trim();
 
 
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifName + "&api_key=dc6zaTOxFJmzC";
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifName + "&api_key=dc6zaTOxFJmzC";
 
             $.ajax({ url: queryURL, method: 'GET' }).done(function(response) {
                 console.log(response);
@@ -74,7 +74,7 @@ $(document).ready(function () {
         var gifName = $(this).data("name");
         console.log($('#gif-input').val().trim());
 
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifName + "&api_key=dc6zaTOxFJmzC";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifName + "&api_key=dc6zaTOxFJmzC";
 
         $.ajax({ url: queryURL, method: 'GET' }).done(function(response) {
             console.log(response);
@@ -89,7 +89,7 @@ $(document).ready(function () {
 
    $('#trending').on('click', function (){
    	$('#main').empty();
-   		var queryURL = "http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
+   		var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
    		$.ajax({ url: queryURL, method: 'GET' }).done(function(response) {
             console.log(response);
    		 for (var x = 0; x <= response.data.length; x++) {
@@ -107,7 +107,7 @@ $(document).ready(function () {
             var gifName = $('#gif-input').val().trim();
 
 
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifName + "&api_key=dc6zaTOxFJmzC";
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifName + "&api_key=dc6zaTOxFJmzC";
 
             $.ajax({ url: queryURL, method: 'GET' }).done(function(response) {
                 console.log(response);
